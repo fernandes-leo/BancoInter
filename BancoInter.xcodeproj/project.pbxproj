@@ -11,6 +11,8 @@
 		B32BD37F2821493300C1EA44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32BD37E2821493300C1EA44 /* ContentView.swift */; };
 		B32BD3812821493A00C1EA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32BD3802821493A00C1EA44 /* Assets.xcassets */; };
 		B32BD3842821493A00C1EA44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32BD3832821493A00C1EA44 /* Preview Assets.xcassets */; };
+		B32BD38B28214AAB00C1EA44 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32BD38A28214AAB00C1EA44 /* MenuView.swift */; };
+		B32BD38D28214D5C00C1EA44 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32BD38C28214D5C00C1EA44 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B32BD37E2821493300C1EA44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B32BD3802821493A00C1EA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32BD3832821493A00C1EA44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B32BD38A28214AAB00C1EA44 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		B32BD38C28214D5C00C1EA44 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				B32BD37C2821493300C1EA44 /* BancoInterApp.swift */,
+				B32BD38C28214D5C00C1EA44 /* PageView.swift */,
 				B32BD37E2821493300C1EA44 /* ContentView.swift */,
+				B32BD38A28214AAB00C1EA44 /* MenuView.swift */,
 				B32BD3802821493A00C1EA44 /* Assets.xcassets */,
 				B32BD3822821493A00C1EA44 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32BD37F2821493300C1EA44 /* ContentView.swift in Sources */,
+				B32BD38D28214D5C00C1EA44 /* PageView.swift in Sources */,
+				B32BD38B28214AAB00C1EA44 /* MenuView.swift in Sources */,
 				B32BD37D2821493300C1EA44 /* BancoInterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
