@@ -90,29 +90,34 @@ struct ContentView: View {
 
                     Spacer()
 
+                  Text("X")
+                    .font(.headline)
+                    .padding(.trailing, 29)
+                    .foregroundColor(Color.orange)
+
                     }
 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 15) {
                         ForEach(0 ..< 3) { item in
                             VStack(alignment: .leading) {
-                                Text("Tenha limite de crédito na hora")
-                                    .font(.system(size: 21))
+                                Text("O cartão dos sonhos")
+                                    .font(.system(size: 20))
                                     .fontWeight(.bold)
 
                                 HStack {
-                                    Image("limite")
+                                    Image("cartao")
                                         .resizable()
                                         .aspectRatio(contentMode: .fill)
-                                        .frame(width: 150, height: 50)
-
+                                        .frame(width: 130, height: 35)
+                                      Spacer()
                                     VStack(alignment: .leading, spacing: 15) {
-                                        Text("Invista no CDB Mais Limite de Crédito e libere seu crédito para usar como quiser.")
+                                        Text("Peça seu cartão com anuidade zero e as melhores condições do mercado")
                                             .font(.system(size: 17))
                                             .foregroundColor(Color.primary.opacity(0.8))
 
                                         Button(action: {}, label: {
-                                            Text("Investir agora")
+                                            Text("Peça agora o seu")
                                                 .foregroundColor(.white)
                                                 .padding(.horizontal)
                                                 .padding(.vertical, 12)
@@ -123,7 +128,7 @@ struct ContentView: View {
                                 }
                             }
                             .padding()
-                            .frame(width: UIScreen.main.bounds.width - 40)
+                            .frame(width: UIScreen.main.bounds.width - 42)
                             .background(Color.white)
                             .cornerRadius(10)
                         }
@@ -133,6 +138,54 @@ struct ContentView: View {
                 .padding(.top)
 
                 Spacer()
+
+
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0 ..< 3) { item in
+                        VStack(alignment: .leading) {
+                            Text("Mais tranquilidade no seu dia a dia")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+
+                            HStack {
+                                Image("tranquilidade")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 130, height: 35)
+                                  Spacer()
+
+                              VStack(alignment: .leading, spacing: 15) {
+                                    Text("Peça seu cartão com anuidade zero e as melhores condições do mercado")
+                                        .font(.system(size: 17))
+                                        .foregroundColor(Color.primary.opacity(0.8))
+
+                                    Button(action: {}, label: {
+                                        Text("Quero ser cliente one")
+                                            .foregroundColor(.white)
+                                            .padding(.horizontal)
+                                            .padding(.vertical, 12)
+                                            .background(Color.orange)
+                                            .cornerRadius(12)
+                                    })
+                                }
+                            }
+                        }
+                        .padding()
+                        .frame(width: UIScreen.main.bounds.width - 42)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                    }
+                }
+                .padding(.horizontal)
+            }
+            .padding(.top)
+
+
+
+
+
             }
         })
         .background(Color(#colorLiteral(red: 0.9602255225, green: 0.9645934701, blue: 0.9818953872, alpha: 1)))

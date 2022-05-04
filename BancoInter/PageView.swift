@@ -24,9 +24,14 @@ struct PageView: View {
                 .frame(width: 30, height: 30)
                 .padding(.leading, 4)
 
-            }
 
-              Spacer()
+              VStack(alignment: .trailing) {
+                Image(systemName: "magnifyingglass")
+                  .padding(.leading, 70)
+                  .foregroundColor(Color.orange)
+                  .font(.system(size: 20, weight: .bold))
+              }
+            }
 
             HStack {
               HStack {
@@ -42,14 +47,15 @@ struct PageView: View {
                 }
                 .redacted(reason: isVisible ? .placeholder : .init())
 
+
                 Button(action: {
                     isVisible.toggle()
                 }, label: {
                     Image(systemName: isVisible ? "eye.slash" : "eye")
                 })
-                //.padding(.leading, 4)
+                .font(.system(size: 20, weight: .bold))
                 .foregroundColor(.orange)
-                .padding(.leading, -5)
+                .padding(.leading, -1)
 
 
             }
