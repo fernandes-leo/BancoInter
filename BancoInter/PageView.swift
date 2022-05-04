@@ -37,8 +37,8 @@ struct PageView: View {
                   .font(.system(size: 20, weight: .bold))
                 }
               }
-
             }
+
 
             HStack {
               HStack {
