@@ -48,7 +48,7 @@ struct ContentView: View {
                                     Text(item.title)
                                         .font(.system(size: 15))
                                         .fontWeight(.bold)
-                                        .foregroundColor(.gray)
+                                        .foregroundColor(Color.gray)
                                         .multilineTextAlignment(.center)
                                 }
                             })
