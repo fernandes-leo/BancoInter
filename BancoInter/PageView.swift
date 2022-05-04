@@ -21,16 +21,23 @@ struct PageView: View {
               Image("Inter")
                   .resizable()
                   .aspectRatio(contentMode: .fill)
-                .frame(width: 30, height: 30)
-                .padding(.leading, 4)
+                  .frame(width: 30, height: 30)
+                  .padding(.leading, 7)
 
 
-              VStack(alignment: .trailing) {
-                Image(systemName: "magnifyingglass")
-                  .padding(.leading, 70)
+              HStack {
+                HStack {
+                  Image(systemName: "magnifyingglass")
+                    .padding(.leading, 40)
+                    .foregroundColor(Color.orange)
+                  .font(.system(size: 20, weight: .bold))
+
+                Image(systemName: "bell")
                   .foregroundColor(Color.orange)
                   .font(.system(size: 20, weight: .bold))
+                }
               }
+
             }
 
             HStack {
@@ -56,10 +63,7 @@ struct PageView: View {
                 .font(.system(size: 20, weight: .bold))
                 .foregroundColor(.orange)
                 .padding(.leading, -1)
-
-
             }
-
           }
           Spacer()
 

@@ -64,6 +64,7 @@ struct ContentView: View {
                 .foregroundColor(Color.orange)
                 .background(Color.white)
                 .padding(.bottom, 85)
+                
 
                 if isExpanded {
                     MenuView()
