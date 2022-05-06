@@ -57,7 +57,7 @@ let menuItems = [
 let ItensMenu = [
 
     MenuItem(title: "Transferências", image: "arrow.2.squarepath"),
-    MenuItem(title: "Gift Card", image: "gift"),
+    MenuItem(title: "Indique e Ganhe", image: "gift"),
     MenuItem(title: "Seguros", image: "umbrella"),
     MenuItem(title: "Interpag", image: "qrcode.viewfinder"),
     MenuItem(title: "Depósito por boleto", image: "doc"),

@@ -98,48 +98,6 @@ struct ContentView: View {
 
                     }
 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 15) {
-                        ForEach(0 ..< 3) { item in
-                            VStack(alignment: .leading) {
-                                Text("O cartão dos sonhos")
-                                    .font(.system(size: 20))
-                                    .fontWeight(.bold)
-
-                                HStack {
-                                    Image("cartao")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(width: 130, height: 35)
-                                      Spacer()
-                                    VStack(alignment: .leading, spacing: 15) {
-                                        Text("Peça seu cartão com anuidade zero e as melhores condições do mercado")
-                                            .font(.system(size: 17))
-                                            .foregroundColor(Color.primary.opacity(0.8))
-
-                                        Button(action: {}, label: {
-                                            Text("Peça agora o seu")
-                                                .foregroundColor(.white)
-                                                .padding(.horizontal)
-                                                .padding(.vertical, 12)
-                                                .background(Color.orange)
-                                                .cornerRadius(12)
-                                        })
-                                    }
-                                }
-                            }
-                            .padding()
-                            .frame(width: UIScreen.main.bounds.width - 42)
-                            .background(Color.white)
-                            .cornerRadius(10)
-                        }
-                    }
-                    .padding(.horizontal)
-                }
-                .padding(.top)
-
-                Spacer()
-
 
 
             ScrollView(.horizontal, showsIndicators: false) {
@@ -183,9 +141,48 @@ struct ContentView: View {
             }
             .padding(.top)
 
+            Spacer()
 
 
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 15) {
+                        ForEach(0 ..< 3) { item in
+                            VStack(alignment: .leading) {
+                                Text("O cartão dos sonhos")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.bold)
 
+                                HStack {
+                                    Image("cartao")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 130, height: 35)
+                                      Spacer()
+                                    VStack(alignment: .leading, spacing: 15) {
+                                        Text("Peça seu cartão com anuidade zero e as melhores condições do mercado")
+                                            .font(.system(size: 17))
+                                            .foregroundColor(Color.primary.opacity(0.8))
+
+                                        Button(action: {}, label: {
+                                            Text("Peça agora o seu")
+                                                .foregroundColor(.white)
+                                                .padding(.horizontal)
+                                                .padding(.vertical, 12)
+                                                .background(Color.orange)
+                                                .cornerRadius(12)
+                                        })
+                                    }
+                                }
+                            }
+                            .padding()
+                            .frame(width: UIScreen.main.bounds.width - 42)
+                            .background(Color.white)
+                            .cornerRadius(10)
+                        }
+                    }
+                    .padding(.horizontal)
+                }
+                .padding(.top)
 
             }
         })

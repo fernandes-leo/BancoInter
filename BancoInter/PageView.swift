@@ -23,23 +23,7 @@ struct PageView: View {
                   .aspectRatio(contentMode: .fill)
                   .frame(width: 30, height: 30)
                   .padding(.leading, 7)
-
-
-              HStack {
-                HStack {
-                  Image(systemName: "magnifyingglass")
-                    .padding(.leading, 40)
-                    .foregroundColor(Color.orange)
-                  .font(.system(size: 20, weight: .bold))
-
-                Image(systemName: "bell")
-                  .foregroundColor(Color.orange)
-                  .font(.system(size: 20, weight: .bold))
-                }
-              }
             }
-
-
             HStack {
               HStack {
                     Text("R$")
